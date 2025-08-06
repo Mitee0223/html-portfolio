@@ -1,11 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maricris Alonte</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="text-decoration: none; color: inherit;">Maricris Alonte</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certificates.html" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<p>Cel: +659159458350</p>
-<p>Email: maricrisalonte@gmail.com</p>
-<p>Linkedin Profile: https://www.linkedin.com/in/maricrisalonte/</p>
-<p>Address:</p>
-<p>
-  1 Sampaguita Avenue<br />
-  Sampaguita Village<br />
-  San Pedro, Laguna <br />
-  Philippines
-</p>
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Get In Touch</h1>
+                <p class="contact-intro">
+                    Ready to collaborate? I'm always interested in discussing new opportunities, 
+                    challenging projects, and how my QA expertise can contribute to your team's success. 
+                    Let's connect!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                
+                <!-- Contact Cards -->
+                <div class="contact-cards">
+                    
+                    <!-- Email Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>Send me a message</p>
+                            <a href="mailto:maricrisalonte@gmail.com" class="contact-link">
+                                maricrisalonte@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Phone</h3>
+                            <p>Call for immediate response</p>
+                            <a href="tel:+639159458350" class="contact-link">
+                                +63 915 945 8350
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>Connect professionally</p>
+                            <a href="https://www.linkedin.com/in/maricrisalonte/" target="_blank" class="contact-link">
+                                linkedin.com/in/maricrisalonte
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Location</h3>
+                            <p>Based in the Philippines</p>
+                            <div class="location-details">
+                                <p>1 Sampaguita Avenue<br>
+                                Sampaguita Village<br>
+                                San Pedro, Laguna<br>
+                                Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send me a message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability Section -->
+    <section class="availability-section">
+        <div class="container">
+            <div class="availability-content">
+                <h2>Current Availability</h2>
+                <div class="availability-info">
+                    <div class="availability-status">
+                        <div class="status-indicator available"></div>
+                        <span class="status-text">Available for new opportunities</span>
+                    </div>
+                    <p>
+                        I'm currently open to discussing new QA testing opportunities, 
+                        both full-time positions and freelance projects. I'm particularly 
+                        interested in roles that involve manual testing, responsive design 
+                        validation, and quality assurance for web applications.
+                    </p>
+                </div>
+                <div class="availability-details">
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Usually within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Time Zone</h4>
+                            <p>Philippines Standard Time (PST)</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Work Preference</h4>
+                            <p>Remote & On-site opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Work Together?</h2>
+                <p>
+                    Let's discuss how my QA expertise can help ensure your software meets the highest quality standards.
+                </p>
+                <div class="cta-buttons">
+                    <a href="mailto:maricrisalonte@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-user"></i> View My Experience
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maricris Alonte</h3>
+                    <p>Manual QA Tester</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/maricrisalonte/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:maricrisalonte@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +63 915 945 8350</p>
+                    <p><i class="fas fa-envelope"></i> maricrisalonte@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Pedro, Laguna, Philippines</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maricris Alonte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>
