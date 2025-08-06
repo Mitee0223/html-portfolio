@@ -1,50 +1,185 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mitee's Portfolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maricris Alonte - QA Analyst Portfolio</title>
+    <meta name="description" content="Professional QA Analyst with expertise in manual testing, software quality assurance, and test automation. View my portfolio and experience.">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<h1>Maricris Alonte's Portfolio</h1>
-<h2>QA Analyst</h2>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Maricris Alonte</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="public/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="public/certificates.html" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="public/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<h3>
-<a href="./public/certificates.html">Certificates</a>
-</h3>
-</br>
-<img src="./assets/images/miniFFC.png" height="200" alt="miniFFC Certificate"/>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Maricris Alonte</h1>
+                <h2 class="hero-subtitle">Manual QA Tester</h2>
+                <p class="hero-description">
+                    A professional and self-motivated QA Tester with expertise in manual testing, 
+                    software quality assurance, and ensuring exceptional user experiences across 
+                    web and mobile applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="public/about.html" class="btn btn-primary">
+                        <i class="fas fa-user"></i> View Experience
+                    </a>
+                    <a href="public/contact.html" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <i class="fas fa-user-circle profile-icon"></i>
+                    <h3>QA Professional</h3>
+                    <p>Since 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<img src="./assets/images/mstconnect.png" height="200" alt="miniFFC Certificate"/>
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-bug"></i>
+                    <h3>Manual Testing</h3>
+                    <p>Comprehensive testing strategies and defect identification</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Testing</h3>
+                    <p>Cross-device compatibility and mobile optimization</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance Analysis</h3>
+                    <p>Monitoring and analyzing product performance metrics</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Functional Testing</h3>
+                    <p>Content validation, forms, and user workflow testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h3>
-    <a href="./public/about.html">Career History</a>
-</h3>
-<img src="./assets/images/career.png" height="400" alt="career"/>
+    <!-- Experience Highlight -->
+    <section class="experience-highlight">
+        <div class="container">
+            <div class="experience-content">
+                <div class="experience-text">
+                    <h2>Current Role</h2>
+                    <h3>QA Analyst at Roya.com Media Design Inc.</h3>
+                    <p class="experience-date">April 2022 - Present</p>
+                    <ul class="experience-list">
+                        <li>Analyzing and monitoring the performance of products</li>
+                        <li>QA sites responsiveness on different screen sizes and devices</li>
+                        <li>Functional testing including content check and inner page design</li>
+                        <li>Ensuring modals appear correctly and all fields are accessible</li>
+                        <li>Database integration testing and SEO optimization validation</li>
+                    </ul>
+                    <a href="public/about.html" class="btn btn-outline">View Full Career History</a>
+                </div>
+                <div class="experience-image">
+                    <img src="assets/images/career.png" alt="Career History" class="career-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h3>
-    <a href="./public/contact.html">Contact Details</a>
-</h3>
-<img src="./assets/images/contact.png" height="300" alt=" Contact details"/>
+    <!-- Certificates Preview -->
+    <section class="certificates-preview">
+        <div class="container">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="certificates-grid">
+                <div class="cert-card">
+                    <img src="assets/images/mstconnect.png" alt="ISTQB Certification" class="cert-image">
+                    <h3>ISTQB Foundation</h3>
+                    <p>Software Quality Assurance Manual Testing</p>
+                </div>
+                <div class="cert-card">
+                    <img src="assets/images/miniFFC.png" alt="MiniFCC Certificate" class="cert-image">
+                    <h3>Web Development</h3>
+                    <p>Philippine Web Designers Organization</p>
+                </div>
+            </div>
+            <div class="certificates-link">
+                <a href="public/certificates.html" class="btn btn-primary">View All Certificates</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maricris Alonte</h3>
+                    <p>Manual QA Tester</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/maricrisalonte/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:maricrisalonte@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="public/about.html">About</a></li>
+                        <li><a href="public/certificates.html">Certificates</a></li>
+                        <li><a href="public/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +63 915 945 8350</p>
+                    <p><i class="fas fa-envelope"></i> maricrisalonte@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Pedro, Laguna, Philippines</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maricris Alonte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-
+    <script src="assets/script.js"></script>
 </body>
-    
 </html>
