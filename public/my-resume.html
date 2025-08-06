@@ -1,9 +1,248 @@
-<!-- This is one possible solution -->
-<h1>My Resume</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Maricris Alonte</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    <style>
+        .resume-section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+        .resume-header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .skill-tag {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin: 0.2rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content fade-in">
+            <h1>RESUME</h1>
+            <p class="subtitle">Professional Summary & Experience</p>
+            <p class="tagline">Comprehensive overview of my qualifications and expertise</p>
+        </div>
+    </header>
 
-<img src="../assets/images/1.jpg"
-  alt="purple birthday cake with candles" />
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">Career History</a>
+            <a href="certificates.html" class="nav-link">Certificates</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
 
-  <img src="../assets/images/2.jpg"
-  alt="purple birthday cake with candles" />
+    <!-- Main Content -->
+    <main>
+        <!-- Resume Header -->
+        <section class="fade-in">
+            <div class="resume-header">
+                <h1 style="color: white; font-size: 3rem; margin-bottom: 0.5rem;">MARICRIS ALONTE</h1>
+                <p style="font-size: 1.5rem; opacity: 0.9; margin-bottom: 1rem;">Manual QA Tester</p>
+                <div class="contact-grid" style="max-width: 800px; margin: 0 auto;">
+                    <div>📞 +659159458350</div>
+                    <div>✉️ maricrisalonte@gmail.com</div>
+                    <div>💼 linkedin.com/in/maricrisalonte</div>
+                    <div>📍 San Pedro, Laguna, Philippines</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Profile -->
+        <section class="resume-section fade-in">
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">PERSONAL PROFILE</h2>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+                A professional and self-motivated QA Tester with extensive experience in manual testing, 
+                performance analysis, and ensuring optimal user experience across various digital platforms. 
+                I am confident in my ability to contribute effectively to your team. I have successfully 
+                identified critical bugs and enhanced overall software quality. My experience includes 
+                extensive use of various testing tools and frameworks, which has helped me hone my 
+                analytical and problem-solving skills.
+            </p>
+        </section>
+
+        <!-- Career History -->
+        <section class="resume-section fade-in">
+            <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">CAREER HISTORY</h2>
+            
+            <!-- Current Position -->
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: var(--secondary-color);">QA ANALYST</h3>
+                <p style="color: var(--accent-color); font-weight: 500;">Roya.com Media Design Inc. • April 2022 - Present</p>
+                <ul style="margin-top: 1rem;">
+                    <li>Analyzing and monitoring the performance of products</li>
+                    <li>QA sites responsiveness on different screen sizes and devices, especially mobile and tablet landscape view</li>
+                    <li>Functional testing includes: Content check, Inner page design, Forms, Custom Fields setup</li>
+                    <li>Ensure modals appear correctly with accessible submit buttons and fields</li>
+                    <li>Verify Blog Listing and Blog Detail page setup</li>
+                    <li>Check SEO title tags and meta tags transfer</li>
+                    <li>Test site speed and provide recommendations to development team</li>
+                    <li>Generate site keys for designated domains</li>
+                </ul>
+            </div>
+
+            <!-- Freelance Position -->
+            <div>
+                <h3 style="color: var(--secondary-color);">FREELANCE QA TEST</h3>
+                <p style="color: var(--accent-color); font-weight: 500;">Utest • April 2022</p>
+                <ul style="margin-top: 1rem;">
+                    <li>Responsible for reviewing and analyzing system specifications</li>
+                    <li>Execute manual test cases and analyze results</li>
+                    <li>Create logs to document testing phases and defects</li>
+                    <li>Report bugs and errors to development teams</li>
+                    <li>Help troubleshoot issues</li>
+                    <li>Ensure user experience meets system specifications</li>
+                    <li>Ensure quality throughout the software development lifecycle</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Freelance Project -->
+        <section class="resume-section fade-in">
+            <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">FREELANCE PROJECT</h2>
+            <h3 style="color: var(--secondary-color);">Tastefulbakesbykim - Testlink</h3>
+            <ul style="margin-top: 1rem;">
+                <li>Prepare Test Cases and Scenarios based on requirements</li>
+                <li>SQL database testing and validation</li>
+                <li>End-to-end functionality testing</li>
+                <li>User acceptance testing coordination</li>
+            </ul>
+        </section>
+
+        <!-- Certificates -->
+        <section class="resume-section fade-in">
+            <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">CERTIFICATES</h2>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <h4 style="color: var(--secondary-color);">MYSQL DATABASE WORKSHOP: REAL DATABASE EXPERIENCE USING MYSQL WORKBENCH</h4>
+                <p>MSTCONNECT PH Educational Consultancy</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <h4 style="color: var(--secondary-color);">SOFTWARE QUALITY ASSURANCE MANUAL TESTING: ISTQB CERTIFICATION</h4>
+                <p>Foundations Training • MSTCONNECT PH Educational Consultancy</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+                <h4 style="color: var(--secondary-color);">MiniFCC s2017e08 Roadshow</h4>
+                <p>Philippine Web Designers Organization, Inc at iAcademy, Makati on November 18, 2017</p>
+            </div>
+
+            <div>
+                <h4 style="color: var(--secondary-color);">The Complete 2020 Software testing Bootcamp</h4>
+                <p>Udemy by Tarek Roshdy</p>
+            </div>
+        </section>
+
+        <!-- Core Skills -->
+        <section class="resume-section fade-in">
+            <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">CORE COMPETENCIES</h2>
+            <div>
+                <span class="skill-tag">Performance Analysis</span>
+                <span class="skill-tag">Responsive Testing</span>
+                <span class="skill-tag">Functional Testing</span>
+                <span class="skill-tag">Manual Testing</span>
+                <span class="skill-tag">Bug Reporting</span>
+                <span class="skill-tag">SQL Testing</span>
+                <span class="skill-tag">User Experience Testing</span>
+                <span class="skill-tag">SEO Testing</span>
+                <span class="skill-tag">Cross-browser Testing</span>
+                <span class="skill-tag">Mobile Testing</span>
+                <span class="skill-tag">Regression Testing</span>
+                <span class="skill-tag">System Specification Analysis</span>
+            </div>
+        </section>
+
+        <!-- Contact Details -->
+        <section class="resume-section fade-in">
+            <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">CONTACT DETAILS</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div>
+                    <h4>Phone</h4>
+                    <p>+659159458350</p>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <p>maricrisalonte@gmail.com</p>
+                </div>
+                <div>
+                    <h4>LinkedIn</h4>
+                    <p>https://www.linkedin.com/in/maricrisalonte/</p>
+                </div>
+                <div>
+                    <h4>Address</h4>
+                    <p>1 Sampaguita Avenue<br>
+                    Sampaguita Village<br>
+                    San Pedro, Laguna<br>
+                    Philippines</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download/Print Section -->
+        <section class="fade-in text-center" style="margin-top: 3rem;">
+            <div class="card">
+                <h3>Need a Copy?</h3>
+                <p class="text-muted mb-2">
+                    You can print this page or save it as PDF using your browser's print function.
+                </p>
+                <button onclick="window.print()" class="btn" style="margin-right: 1rem;">Print Resume</button>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Maricris Alonte. All rights reserved. | QA Analyst Portfolio</p>
+    </footer>
+
+    <script>
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.resume-section, .fade-in').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
 
